@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#5c2433" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="description" content="Jemputan digital majlis perkahwinan Meera — lengkap dengan atur cara, lokasi, RSVP dan salam kaut." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jemputan Perkahwinan Meera" />
+  <meta property="og:description" content="Dengan penuh kesyukuran, kami menjemput anda meraikan hari bahagia kami." />
+  <meta property="og:image" content="assets/og-cover.svg" />
+  <title>Jemputan Perkahwinan Meera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="opening" class="opening" role="dialog" aria-modal="true" aria-labelledby="opening-title">
+    <div class="opening__grain" aria-hidden="true"></div>
+    <img class="opening__floral opening__floral--top" src="assets/floral-corner.svg" alt="" />
+    <img class="opening__floral opening__floral--bottom" src="assets/floral-corner.svg" alt="" />
+    <div class="opening__content">
+      <p class="eyebrow">Walimatulurus</p>
+      <p class="opening__to" id="opening-to">Jemputan khas buat anda</p>
+      <h1 id="opening-title"><span id="opening-bride">Meera</span><span class="ampersand">&amp;</span><span id="opening-groom">Nama Pasangan</span></h1>
+      <p class="opening__date" id="opening-date">Jumaat · 4 September 2026</p>
+      <button id="open-invite" class="button button--light" type="button">Buka Jemputan</button>
+      <p class="opening__hint">Klik untuk melihat butiran majlis</p>
+    </div>
+  </div>
+
+  <header class="hero" id="home">
+    <nav class="topbar" aria-label="Navigasi utama">
+      <a href="#home" class="monogram" id="monogram">M</a>
+      <div class="topbar__actions">
+        <button type="button" class="icon-button" id="share-top" aria-label="Kongsi jemputan">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a3 3 0 1 0-2.83-4A3 3 0 0 0 15 5c0 .2.02.39.06.58L8.9 9.17a3 3 0 0 0-4.4 2.66 3 3 0 0 0 4.4 2.66l6.16 3.59A3 3 0 0 0 15 19a3 3 0 1 0 .83-2.06l-6.16-3.59c.04-.17.06-.35.06-.52s-.02-.35-.06-.52l6.16-3.59A3 3 0 0 0 18 8Z"/></svg>
+        </button>
+        <a class="text-link" href="#rsvp">RSVP</a>
+      </div>
+    </nav>
+
+    <div class="hero__art" aria-hidden="true">
+      <div class="hero__arch"></div>
+      <div class="hero__halo"></div>
+      <img src="assets/floral-corner.svg" class="hero__floral hero__floral--left" alt="" />
+      <img src="assets/floral-corner.svg" class="hero__floral hero__floral--right" alt="" />
+    </div>
+
+    <div class="hero__content reveal">
+      <p class="eyebrow">Dengan penuh kesyukuran</p>
+      <p class="hero__kicker">kami menjemput anda ke majlis perkahwinan</p>
+      <h1><span id="hero-bride">Meera</span><span class="ampersand">&amp;</span><span id="hero-groom">Nama Pasangan</span></h1>
+      <p class="hero__date" id="hero-date">Jumaat · 4 September 2026</p>
+      <p class="personal-greeting" id="personal-greeting" hidden></p>
+      <a href="#details" class="scroll-cue">Lihat butiran <span aria-hidden="true">↓</span></a>
+    </div>
+
+    <div class="demo-badge" id="demo-badge">Concept preview · details to be confirmed</div>
+  </header>
+
+  <main>
+    <section class="section intro" id="details">
+      <div class="section__inner narrow reveal">
+        <p class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+        <p class="eyebrow">Assalamualaikum Warahmatullahi Wabarakatuh</p>
+        <h2>Raikan hari bahagia bersama kami</h2>
+        <p id="invitation-copy">Dengan segala hormatnya kami menjemput Dato’ / Datin / Tuan / Puan / Encik / Cik sekeluarga untuk hadir meraikan majlis perkahwinan kami.</p>
+        <div class="parents-grid">
+          <div>
+            <span>Keluarga pengantin perempuan</span>
+            <strong id="bride-parents">Nama ibu bapa / keluarga</strong>
+          </div>
+          <div>
+            <span>Keluarga pengantin lelaki</span>
+            <strong id="groom-parents">Nama ibu bapa / keluarga</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section date-section">
+      <div class="section__inner reveal">
+        <div class="date-card">
+          <div class="date-card__month" id="event-month">SEPTEMBER</div>
+          <div class="date-card__body">
+            <div class="date-card__day" id="event-weekday">JUMAAT</div>
+            <div class="date-card__number" id="event-day">04</div>
+            <div class="date-card__year" id="event-year">2026</div>
+          </div>
+          <div class="date-card__time" id="event-time">11:00 pagi — 4:00 petang</div>
+        </div>
+
+        <div class="countdown" aria-label="Kiraan detik ke majlis">
+          <div><strong id="days">00</strong><span>Hari</span></div>
+          <div><strong id="hours">00</strong><span>Jam</span></div>
+          <div><strong id="minutes">00</strong><span>Minit</span></div>
+          <div><strong id="seconds">00</strong><span>Saat</span></div>
+        </div>
+
+        <button type="button" class="button button--outline" id="add-calendar">Tambah ke kalendar</button>
+      </div>
+    </section>
+
+    <section class="section itinerary-section" id="itinerary">
+      <div class="section__inner reveal">
+        <p class="eyebrow">Atur Cara</p>
+        <h2 id="itinerary-heading">Perjalanan hari istimewa</h2>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section class="section venue-section" id="location">
+      <div class="section__inner reveal">
+        <div class="venue-card">
+          <div class="venue-card__art" aria-hidden="true">
+            <svg viewBox="0 0 240 160"><path d="M35 135h170M62 135V78l58-43 58 43v57M86 135V91h68v44M108 135v-28h24v28"/><path d="M72 63 120 28l48 35"/></svg>
+          </div>
+          <div class="venue-card__content">
+            <p class="eyebrow">Lokasi Majlis</p>
+            <h2 id="venue-name">Sample Venue — Cyberjaya</h2>
+            <p id="venue-address">Cyberjaya, Selangor</p>
+            <div class="action-grid">
+              <a class="button button--dark" id="google-maps" target="_blank" rel="noopener">Google Maps</a>
+              <a class="button button--outline" id="waze" target="_blank" rel="noopener">Waze</a>
+            </div>
+            <p class="venue-note" id="venue-note">Pautan lokasi sebenar akan dikemaskini selepas venue disahkan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp-section" id="rsvp">
+      <div class="section__inner reveal">
+        <p class="eyebrow">Pengesahan Kehadiran</p>
+        <h2>RSVP melalui WhatsApp</h2>
+        <p>Sila maklumkan kehadiran agar pihak keluarga dapat membuat persediaan terbaik.</p>
+
+        <form id="rsvp-form" class="rsvp-form">
+          <label>
+            Nama
+            <input type="text" name="name" autocomplete="name" required placeholder="Nama anda" />
+          </label>
+          <label>
+            Kehadiran
+            <select name="attendance" required>
+              <option value="">Pilih jawapan</option>
+              <option value="Hadir, insya-Allah">Hadir, insya-Allah</option>
+              <option value="Maaf, tidak dapat hadir">Maaf, tidak dapat hadir</option>
+            </select>
+          </label>
+          <label>
+            Jumlah tetamu
+            <input type="number" name="guests" min="1" max="10" value="1" />
+          </label>
+          <label>
+            Ucapan
+            <textarea name="message" rows="3" placeholder="Ucapan ringkas untuk pasangan"></textarea>
+          </label>
+          <button class="button button--dark" type="submit">Hantar RSVP</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section gift-section" id="gift">
+      <div class="section__inner reveal">
+        <p class="eyebrow">Salam Kaut / Hadiah Digital</p>
+        <h2>Doa dan kehadiran anda sudah mencukupi</h2>
+        <p id="gift-note">Sekiranya berhasrat memberi hadiah, pilihan tanpa tunai disediakan untuk kemudahan tetamu.</p>
+
+        <div class="gift-grid">
+          <div class="qr-card">
+            <img id="gift-qr" src="assets/qr-placeholder.svg" alt="Kod QR hadiah digital" />
+            <div>
+              <span>DuitNow QR</span>
+              <strong id="gift-account-name">Nama penerima akan dikemaskini</strong>
+              <small id="gift-account-note">Imbas melalui aplikasi bank atau e-dompet</small>
+            </div>
+          </div>
+
+          <div class="payment-card">
+            <h3>Pembayaran dalam talian</h3>
+            <p>Gunakan halaman pembayaran selamat yang dihoskan oleh penyedia pilihan pasangan.</p>
+            <div id="payment-links" class="payment-links"></div>
+            <small>Jangan masukkan API key atau secret gateway ke dalam laman awam ini.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section share-section">
+      <div class="section__inner narrow reveal">
+        <p class="eyebrow">Sebarkan Jemputan</p>
+        <h2>Jumpa anda di hari bahagia kami</h2>
+        <p>Kongsikan pautan ini kepada ahli keluarga atau tetamu yang berkaitan.</p>
+        <button type="button" class="button button--light" id="share-bottom">Kongsi melalui WhatsApp</button>
+      </div>
+    </section>
+
+    <section class="section prayer-section">
+      <div class="section__inner narrow reveal">
+        <p class="arabic">بَارَكَ اللهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+        <p>Semoga Allah memberkati kalian berdua, melimpahkan keberkatan ke atas kalian dan menghimpunkan kalian dalam kebaikan.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__monogram" id="footer-monogram">M</div>
+    <p id="footer-names">Meera &amp; Nama Pasangan</p>
+    <small>Jumaat · 4 September 2026</small>
+  </footer>
+
+  <div class="mobile-dock" aria-label="Tindakan pantas">
+    <a href="#location"><span>⌖</span>Lokasi</a>
+    <a href="#rsvp"><span>✓</span>RSVP</a>
+    <a href="#gift"><span>♡</span>Salam Kaut</a>
+    <button type="button" id="share-dock"><span>↗</span>Kongsi</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
